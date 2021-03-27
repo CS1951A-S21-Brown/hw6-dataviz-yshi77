@@ -10,3 +10,30 @@
 }
 
 /* Include any custom CSS styling here! */
+h4 {
+    margin-left: 75px;
+    margin-right: 100px;
+}
+
+rect {
+    stroke-width: 4px;
+    opacity: 0.7;
+}
+rect:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.tooltip {
+    /* color: rgb(37, 194, 37); */
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(37, 194, 37);
+    padding: 10px;
+    border: 3px solid white;
+    box-shadow: 0 0px 10px black;
+}
+.written {
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}

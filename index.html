@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="main.css"/>
         <!--Feel free to add more CSS files as needed-->
         <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+
     </head>
 <body>
     <div class="header">
@@ -15,11 +16,87 @@
     <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
     <div class="row">
         <div class="col-lg-6">
+            <h4>Q1. The following graph shows the top 10 video games of all time based on its global sales.</h4>
             <div id="graph1"></div>
+            <h4>Q2. The following graph illustrates the genre sales broken out per region.</h4>
             <div id="graph2"></div><br/>
         </div>
         <div class="col-lg-6">
+            
+            <h4>Q3. Please select a genre to view its corresponding publishers distribution: <select id="select" onchange="produceGraph3(this.value);"><option value="default">Sports</option></select></h4>
+            
             <div id="graph3"></div>
+        </div>
+        <div class="col-lg-6">
+            <div class="written">
+                <h4>Written Questions</h4>
+                <ol>
+                    <li>
+                        <p>For Question 1, the boss wants to know the top 10 video games of all time. 
+                            So I decided to sort all the video games by their global sales of all time first, and 
+                            then I take the top 10 video games. In the bar chart, I display each name with its corresponding 
+                            global sales in millions.
+                            <br/>
+                            For Question 2, the boss would like to understand which genre is most popular. So I display genre 
+                            sales broken out per region using the grouped bar chart. In the graph, all the data is divided into 
+                            four big categories/regions (e.g. NA, EU, JP, Other). In each region, I sum the regional sales per genre, 
+                            and I display it. In each region, there are 12 genres. So there are 12 bars per region as displayed. By 
+                            looking at this graph, I believe the boss can easily understand which genre is most popular in that region.
+                            <br/>
+                            For Question 3, it is an interactive Pie graph. As you can see, there is a dropdown list containing all the genres.
+                            By selecting the genre you are interested in, it will dynamically display a pie graph that displays the top five
+                            publishers for that genre. In addition, the pie graph shows the percentage of global sales for each of the top five publishers.
+                            Hence, the boss would know which publisher to pick based on which genre a game is by using the graph 3.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            1) First and foremost, it is web-based. Data visualizations are only useful if they can be seen easily. 
+                            There's no better way to look for them than online.
+                            <br/>
+                            2) Its adaptability and flexibility are another explanation why it has performed so well. By integrating
+                             seamlessly with current web technologies, it can modify any aspect of the document object model. 
+                             It has a lot of benefits as a result of this.
+                            <br/>
+                            3) There are no pre-built charts to stifle innovation. Rather, it has tools that make linking data and graphics quick. 
+                            It's in the middle of the two. It's an ideal location for data visualization.
+                        </p>
+                    </li>
+    
+                    <li>
+                        <p>
+                            1) For large numbers of entries, DOM manipulation can be extremely slow. When dealing with large numbers of components, SVG has performance limitations.
+                            <br/>
+                            2) D3.js is a JavaScript library for data-driven document manipulation. D3.js necessitates at least a basic understanding of Javascript, which may not be good for code beginners.
+                            <br/>
+                            3) It has a lower level of support than paid tools. For example, in this assignment, different versions of d3 cause me a lot of trouble, and I take a lot of time to debug.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I am referring to the first reading. The color blind people may find this dashboard accessible as I have tried many sets of colors 
+                            for my graphs to achieve a better data visualization. To be honest, I am a color-blind people, 
+                            and I am not very sensitive for some colors. A good set of colors is really essential for me to 
+                            understand the graph. So I put extra efforts on finding a good set of colors that make color blind
+                            people accessible. In addition, I implemented the tooltip that will benefit some people with vision problems.
+                            However, blind people may have difficulty with my dashboard as I did not use 
+                            alt text to provide a one-sentence summary of the chart. The blind people may find it hard to understand 
+                            my graphs. In terms of the additional actions, I might add more alt text to describe the graph, which will
+                            be useful to a screen reader and benefit more people.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            At the stages of designing my dashboard, I did consider making my dashboard more accessible to 
+                            blind people. I could have made a feature that the Pie/Bar chart will describe the graph when the mouse
+                            is hovering on the graph. However, there are some factors that kept me from taking these steps. One of 
+                            major factors is my bad coding skills. I am not good at JavaScript. Hence, I am not able to implement this 
+                            feature.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            
         </div>
     </div>
     <!--Feel free to add more JavaScript files as needed-->
